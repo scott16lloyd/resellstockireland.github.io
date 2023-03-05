@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang ="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>Resell Stock Ireland Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <section id="header">
+            <a href="index.html"><img src="img/rs-transparentweb.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+                <a href="#" id="close"><img src="img/close.png" alt=""></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <img src="img/hamburger.png" alt="" id="bar">
+        </div>
+        </section>
+
+        <section id="aboutBanner" class="section-m1">
+            <h2>Let's Talk!</h2>
+        </section>
+
+        <section id="form-details">
+            <form action="https://formsubmit.co/scott16lloyd@gmail.com" method="POST">
+                <span>LEAVE A MESSAGE</span>
+                <h2>We love to hear from you</h2>
+                <input type = "text" placeholder="Your Name" name="name" required>
+                <input type = "email" placeholder="Email" name="email" required>
+                <select name="select" required>
+                    <option>Subject</option>
+                    <option>Shipping Quiries</option>
+                    <option>Technical Issue</option>
+                    <option>Sourcing</option>
+                    <option>Other</option>
+                    <textarea id="message" cols="30" rows="10" placeholder="Your Message" name="message" required></textarea>
+                    <button class="normal">Submit</button>
+                </select>
+            </form>
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1" action="https://formsubmit.co/scott16lloyd@gmail.com" method="POST">
+            <div class="newstext">
+                <h4>Sign up for exlusive deals.</h4>
+                <p>Get email updates and <span>email only discounts</span> on all pairs.</p>
+            </div>
+            <div class="newsletterInput">
+                <form action="https://formsubmit.co/2e33f972235f598e9cdf1f90f80f772a" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display: none;">
+
+                <!-- Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input class="emailInput" id="email" type="text" placeholder="Your email address" name="email" required>
+                <input type="submit" value="Sign Up" id="signup">
+            </form>
+            </div>
+        </section>
+
+        <footer class=""section-p1>
+            <div class="col">
+                <img class="logo" src="img/rs-transparentweb.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Email:</strong> scott16lloyd@gmail.com</p>
+                <div class="follow">
+                    <h4>Follow us</h4>
+                    <div class="icon">
+                        <a href="https://www.instagram.com/resellstockireland/" target="_blank"><img src="/img/social/instagram.png" alt=""></a>
+                        <a href="https://www.tiktok.com/@resellstockireland" target="_blank"><img src="/img/social/tik-tok.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col about">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Track My Order</a>
+            </div>
+
+            <div class="paymentInfo">
+                <p>Secured Payment Gateways</p>
+                <img class="cards" src="img/cards.png" alt="">
+                <img class="qr" src="img/RS-QR.png" alt="">
+            </div>
+
+            <div class="copyright">
+                <p>© 2023, Resell Stock Ireland</p>
+            </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
