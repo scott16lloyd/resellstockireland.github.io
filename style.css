@@ -1025,6 +1025,10 @@ footer .copyright {
 }
 
 @media (max-width: 477px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     .section-p1 {
         padding: 20px;
     }
@@ -1136,14 +1140,39 @@ footer .paymentInfo img {
         padding: 12px 20px 12px 20px;
     }
 
-    #about-head img{
-        width: 100%;
+    #about-head{
+        align-items: center;
     }
+
+
+    #about-head img{
+        width: 80%;
+    }
+
 
     #form-details input,
     #form-details select,
     #form-details textarea {
         width: 300px;
+    }
+
+    #about-head h2{
+        width: 350px;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    #about-head div {
+        padding-left: 0;
+        width: 350px;
+    }
+    #about-head p {
+        width: 100%;
+        padding: 0;
+        font-size: 18px;
+        margin: 0; /* set margin to 0 and auto to horizontally center the element */
+        text-align: center; /* add this line to center the paragraph text */
     }
 
     /* Cart Page */
