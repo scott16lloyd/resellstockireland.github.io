@@ -133,7 +133,7 @@ body {
 
 #navbar li a:hover,
 #navbar li a.active{
-    color: #088178;
+    color: #007df6;
 }
 
 #navbar li a.active::after,
@@ -141,7 +141,7 @@ body {
     content: "";
     width: 30%;
     height: 2px;
-    background: #088178;
+    background: #007df6;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -157,7 +157,7 @@ body {
 }
 
 /* Home Page */
-#hero{
+/* #hero{
     background-image: url("img/pandabg.jpg");
     height: 60vh;
     width: 100%;
@@ -168,6 +168,151 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+} */
+
+#hero{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    max-height: 500px;
+    padding: 70px 5vw 130px;
+    background-image: url("img/wave-herro.png");
+}
+
+
+#hero button {
+    text-decoration: none;
+    padding: 20px 30px;
+    font-size: 2.25rem;
+    position: relative;
+    margin: 32px auto; /* set margin to auto for horizontal centering */
+    margin-top: 70px;
+    margin-left: 790px;
+    background: linear-gradient(135deg, #ff5f6c, #ffc471);
+    animation: anime 16s linear infinite;
+    color: #fff;
+    border-radius: 20px;
+    transition: transform 0.1s ease;
+    background-size: 200%;
+    text-shadow: 3px 2px 2px #00000044;
+    letter-spacing: 0.2rem;
+    border: none;
+    box-shadow: 3px 2px 2px #00000044;;
+}
+
+@keyframes anime{
+   0%{
+     background-position: 0%, 50%
+   }
+   50%{
+     background-position: 100% 50%
+   }
+   100%{
+     background-position: 0% 50%
+   }
+}
+
+#hero button:after, #hero button:before {
+    content: "";
+    position: absolute;
+    opacity: 0.3;
+    background: #00000070;
+    border-radius: inherit;
+    width:100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+#hero button:hover {
+    transform: translate(-12px, -12px);
+}
+
+#hero button:hover::after{
+    transform: translate(6px, 6px);
+}
+
+#hero button:hover::before{
+    transform: translate(12px, 12px);
+}
+
+.custom-shape-divider-bottom-1678226172 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1678226172 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 133px;
+}
+
+.custom-shape-divider-bottom-1678226172 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.blob
+{
+    position: absolute;
+    transform: scale(2,1) rotate(45deg);
+    left: 500px;
+    top: 30px;
+    width: 800px;
+    height: 100px;
+    z-index: -11;
+    animation: MoveUpDown1 10s ease-in-out infinite;
+}
+  
+  @keyframes MoveUpDown1 {
+    0%,
+    100% {
+      transform: scale(3, 1) rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: scale(3, 1) rotate(45deg) translateY(-100px);
+    }
+  }
+
+.blob:nth-child(2)
+{
+    filter: blur(150px);
+    top: 30px;
+}
+
+.blob2
+{
+    position: absolute;
+    transform: scale(2,1) rotate(-45deg);
+    left: 600px;
+    top: 10px;
+    width: 800px;
+    height: 100px;
+    z-index: -1;
+    animation: MoveUpDown2 12s ease-in-out infinite;
+}
+
+@keyframes MoveUpDown2 {
+    0%,
+    100% {
+      transform: scale(3, 1) rotate(-45deg) translateY(0);
+    }
+    50% {
+      transform: scale(3, 1) rotate(-45deg) translateY(-100px);
+    }
+  }
+
+.blob2:nth-child(3)
+{
+    filter: blur(100px);
 }
 
 #hero h4{
@@ -182,7 +327,7 @@ body {
 }
 
 #hero h1 {
-    color: #F6AE2D;
+    color: #f8a528;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.568);
 }
 
@@ -192,23 +337,12 @@ body {
     text-shadow: 6px 3px 3px rgba(0, 0, 0, 0.582);
 }
 
-#hero button {
-    background-image: url("img/brush-stroke.png");
-    background-color: transparent;
-    color: #F6AE2D;
-    border: 0;
-    padding: 20px 70px 80px 20px;
-    background-repeat: no-repeat;
-    cursor: pointer;
-    font-weight: 700;
-    font-size: 25px;
-}
-
 #feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 130px;
 }
 
 
@@ -235,17 +369,17 @@ body {
 #feature .fe-box h4{
     line-height: 1;
     border-radius: 4px;
-    color: #088178;
+    color: #1f1f1f;
     background-color: #fddde4;
 
 }
 
 #feature .fe-box:nth-child(2) h4{
-    background-color: #cdebbc;
+    background-color: #aff189;
 }
 
 #feature .fe-box:nth-child(3) h4{
-    background-color: #bcd6eb;
+    background-color: #f3b667;
 }
 
 #feature .fe-box:nth-child(4) h4{
@@ -309,7 +443,7 @@ body {
 }
 
 #product1 .pro .des h4 {
-    color:#088178;
+    color:#007df6;
     font-size: 17px;
 }
 
@@ -356,7 +490,7 @@ body {
 }
 
 #banner button:hover{
-    background: #088178;
+    background: #007df6;
     color: #ffffff;
 }
 #sm-banner {
@@ -554,7 +688,7 @@ footer .follow img{
 
 footer .follow img:hover,
 footer a:hover{
-    color:#088178;
+    color:#007df6;
 }
 
 footer .paymentInfo{
@@ -615,7 +749,7 @@ footer .copyright {
 
 #pagination a{
     text-decoration: none;
-    background-color: #088178;
+    background-color: #007df6;
     padding: 15px 20px;
     border-radius: 4px;
     color: #ffffff;
@@ -674,7 +808,7 @@ footer .copyright {
 
 #prodetails .single-pro-details button{
     border: solid black;
-    background-color: #088178;
+    background-color: #007df6;
     font-weight: 300;
     box-shadow: 1px 1px 2px black;
     margin-top: 10px;
@@ -818,7 +952,7 @@ footer .copyright {
 #coupon button,
 #subtotal button{
     font-size: 16px;
-    background-color: #088178;
+    background-color: #007df6;
     color: #ffffff;
     padding: 12px 20px;
 }
@@ -1087,9 +1221,7 @@ footer .copyright {
         background-image: url("img/pandabgiphone.jpg");
         background-position: center top;
     }
-    * {
-        outline: 1px solid red;
-      }
+    
     #feature{
         display: flex;
         flex-direction: row;
