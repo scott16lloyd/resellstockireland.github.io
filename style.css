@@ -1196,6 +1196,21 @@ footer .copyright {
         max-width: 100%;
     }
 
+    #h1 .login_text {
+        font-size: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.login_text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     
     .section-p1 {
         padding: 20px;
@@ -1221,7 +1236,7 @@ footer .copyright {
         background-image: url("img/pandabgiphone.jpg");
         background-position: center top;
     }
-    
+
     #feature{
         display: flex;
         flex-direction: row;
