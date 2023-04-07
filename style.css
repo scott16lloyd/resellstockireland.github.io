@@ -177,19 +177,18 @@ body {
     align-items: flex-start;
     justify-content: center;
     max-height: 500px;
-    padding: 70px 5vw 130px;
+    padding: 100px 5vw 130px;
     background-image: url("img/wave-herro.png");
 }
 
 
 #hero button {
     text-decoration: none;
-    padding: 20px 30px;
-    font-size: 2.25rem;
+    padding: 15px 30px;
+    font-size: 1.25rem;
     position: relative;
-    margin: 32px auto; /* set margin to auto for horizontal centering */
-    margin-top: 70px;
-    margin-left: 790px;
+    margin: 10px auto; /* set margin to auto for horizontal centering */
+    margin-left: 160px;
     background: linear-gradient(135deg, #ff5f6c, #ffc471);
     animation: anime 16s linear infinite;
     color: #fff;
@@ -1233,14 +1232,59 @@ footer .copyright {
 
     #hero {
         padding: 0 20px;
-        background-image: url("img/pandabgiphone.jpg");
+        background-image: url("img/wave-herro.png");
         background-position: center top;
     }
+
+    #hero p{
+        margin-bottom: 10px;
+    }
+
+    #hero button{
+        margin-bottom: 60px;
+    }
+
+    .blob{
+    position: absolute;
+    transform: scale(2,1) rotate(45deg);
+    left: 5px;
+    top: 500px;
+    width: 100px;
+    height: 100px;
+    z-index: -11;
+    animation: MoveUpDown1 10s ease-in-out infinite;
+}
+  
+  @keyframes MoveUpDown1 {
+    0%,
+    100% {
+      transform: scale(2.5, 1) rotate(45deg) translateY(0);
+    }
+    50% {
+      transform: scale(2.5, 1) rotate(45deg) translateY(-20px);
+    }
+  }
+
+  .blob2 {
+    display: none;
+  }
+
+.blob:nth-child(2)
+{
+    filter: blur(150px);
+    top: 30px;
+}
+
+.blob2:nth-child(3)
+{
+    filter: blur(100px);
+}
 
     #feature{
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
+        padding-top: 10px;
     }
 
     #feature .fe-box {
