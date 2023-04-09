@@ -407,8 +407,8 @@ body {
     transition: 0.2s ease;
     position: relative;
     margin-bottom: 40px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #product1 .pro:hover{
