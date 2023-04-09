@@ -390,19 +390,24 @@ body {
     padding-top: 20px;
     margin: 25px;
     flex-wrap: wrap;
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 #product1 .pro{
     width: 23%;
     min-width: 250px;
     max-height: 420px;
-    padding: 10px 12px 0px 0px;
+    padding: 0px 32px 0px 0px;
     border: 1px solid #cce7d0;
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
     transition: 0.2s ease;
     position: relative;
+    margin-bottom: 40px;
+    margin-right: 40px;
 }
 
 #product1 .pro:hover{
@@ -752,6 +757,8 @@ footer .copyright {
 #prodetails{
     display: flex;
     margin-top: 20px;
+
+    
 }
 
 #prodetails .single-pro-image{
@@ -763,6 +770,8 @@ footer .copyright {
 .small-img-group{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .small-img-col{
@@ -967,10 +976,28 @@ footer .copyright {
     font-size: 16px;
 }
 
+/* Shipping Info */
+
+.infoPara {
+    font-size: 1.2rem;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 20px;
+    margin: 0 auto;
+  text-align: center;
+}
 
 /* Start Media Query */
 
 @media (max-width:799px){
+    .infoPara {
+        font-size: 1.2rem;
+        padding: 15px;
+        margin: 0 auto;
+      text-align: center;
+    }
+    
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -1219,6 +1246,8 @@ footer .copyright {
 }
 
 @media (max-width: 477px) {
+
+
     body {
         overflow-x: hidden;
         max-width: 100%;
