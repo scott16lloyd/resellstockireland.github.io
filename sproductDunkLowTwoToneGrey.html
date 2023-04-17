@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content = "IE=edge">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval' apis.google.com;">
     <title>Resell Stock Ireland Store</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/rsfavicon.jpg">
@@ -12,12 +13,12 @@
 
 <body>
         <section id="header">
-            <a href="index"><img src="img/rs-transparentweb.png" class="logo" alt=""></a>
+        <a href="index"><img src="img/rs-transparentweb.png" class="logo" alt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a href="index">Home</a></li>
-                <li><a class="active" href="shop">Shop</a></li>
+                <li><a href="shop">Shop</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="contact">Contact</a></li>
                 <a href="#" id="close"><img src="img/close.png" alt=""></a>
@@ -28,12 +29,46 @@
         </div>
         </section>
 
-        <section id="store-hero">
-            <h2>Buy 100% authentic sneakers!</h2>
-            <p>Save up to 20% off platform costs!</p>
-        </section>
+        <section id="prodetails" class="section-p1">
+            <div class="single-pro-image">
+                <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-1.jpg" width=100% id="mainImg" alt="">
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-1.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-2.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-3.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-4.jpg" width="100%" class="small-img" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="single-pro-details">
+                <h6>Home / Dunks</h6>
+                <h4>Nike Dunk Low GS Two Tone Grey</h4>
+                <h2>€150</h2>
+                <select>
+                    <option>Select Size</option>
+                    <option>UK 5.5</option>
+                    <option>UK 6 (EU 39)</option>
+                </select>
+                <a href="https://checkout.square.site/merchant/MLKAZ5NNQAGRH/checkout/TQNZJ7QP25ZYC56E4JC2N6GO"><button class="normal">Buy Now</button></a>
+                <h2 class="productDet">Product Details</h2>
+                <span>The Nike Dunk Low expands its neutral colourway with the introduction of the Nike Dunk Low GS Grey.
 
+                    This low-cut and smaller-sized shoe comes dressed in a highly versatile two-toned upper. The lighter hue of grey forms the base while a darker, rain cloud-colored grey covers the toe cap, the eyesta panel and the foxing of the shoe. Snowy white signature profile Swooshes on both the medial and lateral sides of the shoe create the only breaks in the greyscale colour scheme, together with the matching laces. The mesh sockliner matches the grey of the shoe’s base. A clean white midsole and a grey rubber outsole finish off the shoe’s design.
+                    
+                    Catch the Nike Dunk Low GS Grey on The Sole Supplier app and always be one of the first in line for the latest shoes from Nike.</span>
+            </div>
+        </section>
+        
         <section id="product1" class=".section-p1">
+            <h2>Featured Products</h2>
+            <p>Most popular items</p>
             <div class="pro-container">
                 <div class="pro" onclick="window.location.href='sproductDunkPanda';">
                     <img src="img/products/DunkPanda/nike-dunk-low-panda-1.webp" class="productImage" alt="">
@@ -50,7 +85,7 @@
                     <div class="des">
                         <span>Nike</span>
                         <h5>Dunk Low Grey Fog</h5>
-                        <h4>€220</h4>
+                        <h4>€195</h4>
                         </div>
                         <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
                 </div>
@@ -59,37 +94,7 @@
                     <img src="img/products/DunkLowActiveFuchsia/dunk-low-fuchsia-1.jpg" class="productImage" alt="">
                     <div class="des">
                         <span>Nike</span>
-                        <h5>Dunk Low Active Fuchsia</h5>
-                        <h4>€160</h4>
-                        </div>
-                        <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
-                </div>
-
-                <div class="pro" onclick="window.location.href='sproductDunkLowTwoToneGrey';">
-                    <img src="img/products/DunkLowTwoToneGrey/dunkLowTwoToneGrey-1.jpg" class="productImage" alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Dunk Low GS Two Tone Grey</h5>
-                        <h4>€150</h4>
-                        </div>
-                        <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
-                </div>
-
-                <div class="pro" onclick="window.location.href='sproductJ4Craft';">
-                    <img src="img/products/J4Craft/jordan4craft1.jpg" class="productImage" alt="">
-                    <div class="des">
-                        <span>Jordan</span>
-                        <h5>Jordan 4 Craft</h5>
-                        <h4>€250</h4>
-                        </div>
-                        <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
-                </div>
-
-                <div class="pro" onclick="window.location.href='sproductSBDunkWhiteGum';">
-                    <img src="img/products/SBDunkLowWhiteGum/sbdunklowwhitegum1.jpg" class="productImage" alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>SB Dunk Low White Gum</h5>
+                        <h5>Nike Dunk Low Active Fuchsia</h5>
                         <h4>€170</h4>
                         </div>
                         <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
@@ -104,31 +109,7 @@
                         </div>
                         <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
                 </div>
-
-                <div class="pro" onclick="window.location.href='sproductSupremeSS22Sweatshirt';">
-                    <img src="img/products/SupremeSS22SweatShirtYellow/SupremeSSSweatshirtYellow1.jpg" class="productImage" alt="">
-                    <div class="des">
-                        <span>Supreme</span>
-                        <h5>Supreme Box Logo Crewneck (FW22)</h5>
-                        <h4>€220</h4>
-                        </div>
-                        <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
-                </div>
-
-                <div class="pro" onclick="window.location.href='sproductTomSachsNikecraftTee';">
-                    <img src="img/products/TomSachsNikecraftTee/tomsachsnikecrafttee1.jpg" class="productImage" alt="">
-                    <div class="des">
-                        <span>Nike</span>
-                        <h5>Nike x Tom Sachs Nikecraft Studio T-shirt</h5>
-                        <h4>€60</h4>
-                        </div>
-                        <a href="#"><img src="img/shopping-cart.png" class="cart" alt=""></a>
-                </div>
-        </section>
-
-        <section id="pagination" class="section-p1">
-            <a href="#">1</a>
-            <a href="#"><img src="/img/right-arrow.png" alt="" class="arrow"></a>
+            
         </section>
 
         <section id="newsletter" class="section-p1 section-m1" action="https://formsubmit.co/scott16lloyd@gmail.com" method="POST">
@@ -145,7 +126,7 @@
                 <input type="hidden" name="_captcha" value="false">
 
                 <input class="emailInput" id="email" type="text" placeholder="Your email address" name="email" required>
-                <input class="normal" type="submit" value="Sign Up" id="signup">
+                <input type="submit" value="Sign Up" id="signup">
             </form>
             </div>
         </section>
@@ -183,9 +164,27 @@
             <div class="copyright">
                 <p>© 2023, Resell Stock Ireland</p>
                 <p>Designed by <a href="https://www.linkedin.com/in/scott-lloyd-111a91222">Scott Lloyd</a></p>
-
             </div>
         </footer>
+
+        <script>
+            var mainImage = document.getElementById("mainImg");
+            var smallImage = document.getElementsByClassName("small-img");
+
+            smallImage[0].onclick = function(){
+                mainImage.src = smallImage[0].src;
+            }
+            smallImage[1].onclick = function(){
+                mainImage.src = smallImage[1].src;
+            }
+            smallImage[2].onclick = function(){
+                mainImage.src = smallImage[2].src;
+            }
+            smallImage[3].onclick = function(){
+                mainImage.src = smallImage[3].src;
+            }
+            
+        </script>
 
 
     <script src="script.js"></script>
